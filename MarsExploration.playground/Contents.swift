@@ -14,7 +14,7 @@ func findNonSOS(_ sosMsgs : String) -> (Int, String){
      |S| % 3 = 0
      S - uppercased
      */
-    let sCount = sosMsgs.characters.count
+    let sCount = sosMsgs.count
     if (sCount < 1 || sCount > 99 || sCount%3 != 0){
         return (0 , "NO SOS")
     }
